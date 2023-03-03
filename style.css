@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+header{
+    font-family: Lato, bold;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.filmstrip {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 10px;
+    overflow-x: scroll;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10%;
+    min-width: 500px;
+  }
+
+  .filmstrip::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .frame-container {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .frame-image {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover
+  }
+  
+  .frame-text {
+    font-family: Lato, light;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    header{
+        font-family: Lato, bold;
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30%;
+    }
+    
+    .filmstrip {
+        display: grid;
+        grid-template-columns: repeat(22, 1fr);
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 10px;
+        overflow-x: scroll;
+        background-color: black;
+        padding: 10px;
+        width: 100%;
+        margin-top: 40%;
+        min-width: 350px;
+      }
+    
+      .filmstrip::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .frame-container {
+        position: relative;
+        width: 350px;
+        height: 225px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      .frame-image {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background-size: cover
+      }
+      
+      .frame-text {
+        font-family: Lato, light;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 7px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+        text-align: center;
+      }
+}
+  
